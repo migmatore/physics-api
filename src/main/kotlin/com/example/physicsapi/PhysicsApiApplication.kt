@@ -15,7 +15,7 @@ class PhysicsApiApplication {
     fun corsConfigurer(): WebMvcConfigurer {
         return object : WebMvcConfigurerAdapter() {
             override fun addCorsMappings(registry: CorsRegistry) {
-                registry.addMapping("/plus").allowedOrigins("http://localhost:8080")
+                registry.addMapping("/plus").allowedOrigins("https://physics-api.herokuapp.com")
             }
         }
     }
