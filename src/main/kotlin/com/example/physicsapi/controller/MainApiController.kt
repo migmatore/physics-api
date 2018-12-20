@@ -12,6 +12,11 @@ class MainApiController {
         abstract var result: Int
     }
 
+    @GetMapping
+    fun index(): String {
+        return "This is API"
+    }
+
     @GetMapping("/plus")
     fun plus(
             @RequestParam("num1") num1: Int,
